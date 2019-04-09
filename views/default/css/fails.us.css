@@ -5,7 +5,7 @@ a {
    color: red;
 }
 a:visited {
-   color: $(background-color-soft);
+   color: $(foreground-color-soft);
 }
 .elgg-button {
 background: #000000;
