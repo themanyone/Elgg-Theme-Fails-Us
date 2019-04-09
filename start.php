@@ -4,6 +4,7 @@
  * @author Henry Kroll www.thenerdshow.com
  * @license GPL2
  */
+
 function theme_fails_us_init() {
     // change the default header_logo
     elgg_register_plugin_hook_handler('view', 'page/elements/header_logo', 'logo_fails_us');
@@ -11,10 +12,13 @@ function theme_fails_us_init() {
 }
 
 function logo_fails_us($hook, $type, $vars, $params) {
+   // change default site colors
    elgg_load_css('fails.us.css');
+   $url = "https://fails.us/file/view/741/get-your-share-buttonfailsus";
    // insert our icon
    $img = elgg_get_simplecache_url('images/fu32.png');
-   return str_replace('-site"><a', '-site"><img src="'.$img.'"><a', $vars);
+   return str_replace('-site"><a', '-site"><a href="'.$url
+   .'"><img src="'.$img.'"></a><a', $vars);
 }
 
 // register for the init, system event when our plugin start.php is loaded
