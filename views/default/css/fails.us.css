@@ -1,15 +1,74 @@
 body div.elgg-page-section.elgg-page-topbar {
    background: black;
 }
+.elgg-child-menu {
+   background: black !important;
+}
+.elgg-child-menu:before {
+   color: black !important;
+}
+.elgg-menu-breadcrumbs-default {
+	display: none;
+}
 a {
    color: red;
+}
+a:hover {
+   color: #C00 !important;
+}
+ul.elgg-entity-dropdown-menu a.elgg-anchor {
+   color: white;
+}
+ul.elgg-entity-dropdown-menu a.elgg-anchor:hover {
+   background: #666;
+}
+.elgg-nav-logo a {
+   padding: 0;
+   padding-right: 0.3em;
+   margin: 0;
 }
 a:visited {
    color: $(foreground-color-soft);
 }
+.search-input{
+   padding: 0 0 0 5px;
+}
+.elgg-menu-content, .elgg-form-search, .elgg-button-submit {
+   padding: 0.1rem 1rem 0.1rem 0 !important;
+}
+.elgg-head {
+	overflow-wrap: normal !important;
+}
 .elgg-button {
-background: #000000;
-background: -moz-linear-gradient(top, #000000 0%, #D00 49%, #000000 100%);
-background: -webkit-linear-gradient(top, #000000 0%, #D00 49%, #000000 100%);
-background: linear-gradient(to bottom, #000000 0%, #D00 49%, #000000 100%);
+  background: red;
+  background-image: -webkit-linear-gradient(top, red, black);
+  background-image: -moz-linear-gradient(top, red, black);
+  background-image: -ms-linear-gradient(top, red, black);
+  background-image: -o-linear-gradient(top, red, black);
+  background-image: linear-gradient(to bottom, red, black);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px #222;
+  padding: 0.2rem 1rem 0.2rem 0.5rem !important;
+}
+
+.elgg-button:hover {
+   box-shadow: 1px 1px 5px #222;
+   transform: translate(1px, 1px);
+  background-image: -webkit-linear-gradient(top, red, black);
+  background-image: -moz-linear-gradient(top, red, black);
+  background-image: -ms-linear-gradient(top, red, black);
+  background-image: -o-linear-gradient(top, red, black);
+  background-image: linear-gradient(to bottom, red, black);
+  color: white !important;
+}
+.elgg-page-topbar{
+   padding: 0 0 0 0 !important;
+}
+.elgg-button-submit {
+   margin: 0 !important;
+}
+input[type=email], input[type=password], input[type=text], input[type=number], input[type=url] {
+   height: 2rem !important;
 }
