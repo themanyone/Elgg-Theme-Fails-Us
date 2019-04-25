@@ -13,7 +13,7 @@ function theme_fails_us_init() {
 }
 
 function header_fails_us($hook, $type, $vars, $params) {
-   $script = '<div class="elgg-heading" style="position:absolute;top:55px;right:5px;"><script src="https://thenerdshow.com/social/mediaIcons.js?button0=&amp;button1=&amp;button2=&amp;button3=&amp;button4=&amp;button5=&amp;button12=&amp;button13=&amp;url13=//youtube.com/themanyone"></script></div>';
+   $script = '<div class="elgg-heading" style="position:relative;text-align:center;top:-10px;height:0"><script src="https://thenerdshow.com/social/mediaIcons.js?button0=&amp;button1=&amp;button2=&amp;button3=&amp;button4=&amp;button5=&amp;button12=&amp;button13=&amp;url13=//youtube.com/themanyone"></script></div>';
    // $vars = preg_replace('#(<div.*?header">)(.*?)(</div>)#',"$1 $script $2$3", $vars);
    $vars = $script.$vars;
    return $vars;
