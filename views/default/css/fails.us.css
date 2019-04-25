@@ -4,6 +4,12 @@ body div.elgg-page-section.elgg-page-topbar {
 .elgg-child-menu {
    background: black !important;
 }
+.elgg-state-popped a.elgg-menu-content{
+   color: white !important;
+}
+.elgg-state-popped a.elgg-menu-content:hover{
+   color: #C00 !important;
+}
 .elgg-child-menu:before {
    color: black !important;
 }
@@ -16,7 +22,8 @@ a {
 a:hover {
    color: #C00 !important;
 }
-ul.elgg-entity-dropdown-menu a.elgg-anchor {
+ul.elgg-entity-dropdown-menu a.elgg-anchor,
+ul.elgg-menu-entity-navigation a.elgg-anchor {
    color: white;
 }
 ul.elgg-entity-dropdown-menu a.elgg-anchor:hover {
@@ -39,7 +46,7 @@ a:visited {
 .elgg-head {
 	overflow-wrap: normal !important;
 }
-.elgg-button {
+a.elgg-button {
   background: red;
   background-image: -webkit-linear-gradient(top, red, black);
   background-image: -moz-linear-gradient(top, red, black);
@@ -53,7 +60,7 @@ a:visited {
   padding: 0.2rem 1rem 0.2rem 0.5rem !important;
 }
 
-.elgg-button:hover {
+a.elgg-button:hover {
    box-shadow: 1px 1px 5px #222;
    transform: translate(1px, 1px);
   background-image: -webkit-linear-gradient(top, red, black);
@@ -71,4 +78,7 @@ a:visited {
 }
 input[type=email], input[type=password], input[type=text], input[type=number], input[type=url] {
    height: 2rem !important;
+}
+.elgg-layout-columns {
+   display: block !important;
 }
